@@ -1,0 +1,28 @@
+﻿@model EnterpriseApplication.ViewModels.HomeViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h2>
+    @Model.Title
+</h2>
+
+@foreach (var pie in Model.Pies)
+{
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <img src="@pie.ImageThumbnailUrl" alt="" style="height:200px ;width:200px">
+            <div class="caption">
+                <h3 class="pull-right">@pie.price.ToString("c")</h3>
+                <h3>
+                    <a asp-controller="Home" asp-action="Details" asp-route-id="@pie.Id">@pie.Name</a>
+                </h3>
+                <p>@pie.ShortDescription</p>
+            </div>
+        </div>
+    </div>
+
+}
