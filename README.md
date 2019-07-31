@@ -10,7 +10,8 @@ A project made in ASP.NET Core under which we are having a Pie Shop and user can
 + [Features](#features)
 + [Screenshots](#screenshots)
 
-### ScreenShots
+## Screenshots
 
+#### Registration Form:
 ![](https://github.com/DhruvKinger/Pie-Shop/blob/master/Forgithub/Screenshot%20(645).png)
 
