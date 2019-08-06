@@ -10,6 +10,9 @@ A project made in ASP.NET Core 2.1 under which we are having a Pie Shop and user
 + [Setup](#setup)
 + [Features](#features)
 + [Screenshots](#screenshots)
+## Contribute
++ For reporting bug about an incorrect file not being processed, open a new issue.
++ PRs are always welcome to improve exisiting system and documentation too.:thumbsup:
 
 ## Screenshots
 
