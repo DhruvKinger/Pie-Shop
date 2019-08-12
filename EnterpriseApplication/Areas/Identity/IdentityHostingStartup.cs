@@ -1,4 +1,5 @@
 ﻿using System;
+using EnterpriseApplication.Auth;
 using EnterpriseApplication.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -16,7 +17,16 @@ namespace EnterpriseApplication.Areas.Identity
         {
             builder.ConfigureServices((context, services) => {
 
-                services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppDbContext>();
+                //services.AddDefaultIdentity<ApplicationUser>().AddEntityFrameworkStores<AppDbContext>();
+                services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+                {
+                    options.Password.RequiredLength = 8;
+                    options.Password.RequireNonAlphanumeric = true;
+                    options.Password.RequireUppercase = true;
+                    options.User.RequireUniqueEmail = true;
+                })
+                .AddEntityFrameworkStores<AppDbContext>();
+
             });
         }
     }

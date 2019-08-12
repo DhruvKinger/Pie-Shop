@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+//using EnterpriseApplication.Auth;
 using System.Threading.Tasks;
 using EnterpriseApplication.Models;
 using Microsoft.AspNetCore.Builder;
@@ -9,6 +10,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Identity;
+using EnterpriseApplication.Auth;
 
 namespace EnterpriseApplication
 {
@@ -26,7 +29,7 @@ namespace EnterpriseApplication
             services.AddTransient<IFeedBackRepositry, FeedBackRepositry>();
             services.AddTransient<IPieRepositry, PieRepositry>();
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-              services.AddMvc();
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
