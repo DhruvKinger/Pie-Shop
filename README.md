@@ -1,5 +1,5 @@
 # Pie-Shop
-A project made in ASP.NET Core 2.1 under which we are having a Pie Shop and user can buy Pies/Cookies from the Shop.User can choose Pie and can place the order as per their currency.User can give Feedback to the Shop too.Till Now completed only initial phase yet more to come and will add more features to it.In processing.
+A project made in ASP.NET Core 2.1 under which we are having a Pie Shop and user can buy Pies/Cookies from the Shop.User can choose Pie and can place the order as per their currency.User can give Feedback to the Shop too.Till Now completed only initial phase yet more to come and will add more features to it.In processing.Admin can Create,Update and Delete Roles of System.
 
 
 #### Website's Home Page:
