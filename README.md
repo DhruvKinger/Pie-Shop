@@ -13,7 +13,8 @@ A project made in ASP.NET Core 2.1 under which we are having a Pie Shop and user
 ## Contribute
 + For reporting bug about an incorrect file not being processed, open a new issue.
 + PRs are always welcome to improve exisiting system and documentation too.:thumbsup:
-
+## Features
++It provides the facility to add multiple Admins controlled by Super Admin.
 ## Screenshots
 
 #### Registration Form:
