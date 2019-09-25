@@ -13,8 +13,11 @@ A project made in ASP.NET Core 2.1 under which we are having a Pie Shop and user
 ## Contribute
 + For reporting bug about an incorrect file not being processed, open a new issue.
 + PRs are always welcome to improve exisiting system and documentation too.:thumbsup:
+
 ## Development
-+ It is developed in Asp.Net Core 2.1 and Entity Framework Core is used with it.
+The backend of the system is developed on *[MSSQL SERVER](https://www.microsoft.com/en-au/sql-server/sql-server-downloads)* and it is free and open source. You just need to download this and installed it on your pc and it will be integrated with the Frontend in the Visual Studio 2017.
+The front end is built on *[ASP.NET Core]*, you can use that in Visual Studio an OpenSource Platform Developed By Microsoft.Bootstrap Files are used too[Bootstrap v2.2.2](http://bootstrapdocs.com/v2.2.2/docs/).  
+Entity Framework Core is used with the Code First approach followed In the project.
 
 ## Setup
 
